@@ -38,7 +38,12 @@ test {
     useJUnitPlatform()
 }
 
+/*
 bootJar {
     archiveBaseName  = 'scheduler'
     archiveVersion = "0.0.1"
+}*/
+//버전 삭제
+bootJar {
+    archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
 }
