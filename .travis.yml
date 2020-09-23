@@ -14,7 +14,7 @@ cache:
 
 script:
   # Build
-  - ./web/gradlew clean build
+  - ./gradlew clean build
 
   - DOCKER_USER=chb1828
   - DOCKER_PASS=qjaand6378
