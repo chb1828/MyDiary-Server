@@ -30,10 +30,10 @@ workflows:
       - build_and_push_docker_image:
           filters:
             branches:
-              only: master
+              only: 01-travisCi-to-CircleCi
       - deploy:
           requires:
             - build_and_push_docker_image
           filters:
             branches:
-              only: master
+              only: 01-travisCi-to-CircleCi
